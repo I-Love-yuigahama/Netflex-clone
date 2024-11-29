@@ -1,0 +1,93 @@
+.Navbar
+{
+    width: 100%;
+    padding: 20px 6%; 
+    /* 20px top and bottom  6% for left and right */
+    display: flex;
+    /* contenes will be aligned horizontaly */
+    justify-content: space-between;
+    /* the left column and right column will be aligned side by side and there will be space between them */
+    position: fixed;
+    font-size: 14px;
+    color: #e5e5e5;
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.7) 10%, transparent);
+    z-index:1
+}
+
+.navbar-left
+{
+    display: flex;
+    align-items: center;
+    /* Vertically centers  */
+    gap: 50px;
+}
+
+.navbar-left img
+{
+    width: 90px;
+}
+
+.navbar-left ul
+{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar-left ul li
+{
+ cursor: pointer;
+}
+
+.navbar-right
+{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    /* Vertically centers  */
+
+}
+
+.navbar-right .icons{
+    width: 20px;
+    cursor: pointer;
+}
+
+.navbar-right .profile
+{
+    border-radius: 4px;
+    width: 40px;
+}
+
+.navbar-profile
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.Navbar .dropdown
+{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: max-content;
+    background: #191919;
+    padding: 18px 22px;
+    border-radius: 2px;
+    text-decoration: underline;
+    z-index: 1;
+    display: none;
+}
+
+.Navbar .dropdown p
+{
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.navbar-profile:hover .dropdown{
+    display: inline-block;
+}
