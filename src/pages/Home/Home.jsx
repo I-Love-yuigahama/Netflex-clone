@@ -3,6 +3,8 @@ import './Home.css'
 import Navbar from '../../components/Navbar/Navbar'
 import hero_banner from '../../assets/assets/hero_banner.jpg'
 import hero_title from '../../assets/assets/hero_title.png'
+import Play_icon from '../../assets/assets/play_icon.png'
+import info_icon from '../../assets/assets/info_icon.png'
 
 const Home = () => {
   return (
@@ -17,6 +19,10 @@ const Home = () => {
               man living in modern instanbul embarks on a quest to save
               the city from an immortal enermy
             </p>
+            <div className="hero-btns">
+                <button className='btn'><img src={Play_icon} alt="" />Play</button>
+                <button className='btn dark-btn'><img src={info_icon} alt="" />More Info</button>
+            </div>
          </div>
       </div>
     </div>
