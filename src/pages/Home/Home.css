@@ -25,7 +25,7 @@
     margin-bottom: 30px;
 }
 
-.caption-img p
+.hero-caption p
 {
     max-width: 700px;
     font-size: 17px;
@@ -65,4 +65,19 @@
 {
     color: #fff;
     background: #6d6d6eb3;
+}
+
+.hero-btns .btn:hover
+{
+    background: #ffffffbf;
+}
+
+.hero-btns .btn.dark-btn:hover
+{
+    background: #6d6d6e66;
+}
+
+.more-cards
+{
+    padding-left: 6%;
 }
