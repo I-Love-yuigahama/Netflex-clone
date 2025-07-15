@@ -1,0 +1,73 @@
+.player
+{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.player .player-img
+{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.icon
+{
+    margin: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-bottom: 5px outset #e50914 ; */
+}
+
+.icon a{
+    text-decoration: none;
+}
+
+.icon img
+{
+    display: flex;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+.player iframe
+{
+    border-radius: 10px;
+    
+}
+
+.player-info
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 90% ;
+    margin: 20px 0px;
+ }
+
+ 
+
+  .btn button
+  {
+    
+    width: auto;
+    height: 50px;
+    border: 0;
+    outline: 0;
+    padding: 20px;
+    background: red;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+  }

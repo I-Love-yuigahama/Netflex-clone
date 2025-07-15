@@ -91,3 +91,8 @@
 .navbar-profile:hover .dropdown{
     display: inline-block;
 }
+
+.nav-dark
+{
+    background-color: #141414;
+}

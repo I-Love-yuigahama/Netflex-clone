@@ -7,8 +7,17 @@ import profile_icon from '../../assets/assets/profile_img.png'
 import caret_icon from '../../assets/assets/caret_icon.svg'
 
 const Navbar = () => {
+
+    const navRef = React.useRef();
+
+    React.useEffect(() => {
+        window.addEventListener('scroll', () => {window.scrollY >=80 
+            ? navRef.current.classList.add('nav-dark') 
+            : navRef.current.classList.remove('nav-dark')});
+    }, []);
+   
   return (
-    <div className='Navbar'>
+    <div ref={navRef} className='Navbar'>
         <div className="navbar-left">
 
             <img src={logo} alt='logo'></img>
