@@ -10,14 +10,18 @@ import { toast } from "react-toastify";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBxgRsX1oUl8dl3q4LwefVmQFoiSf2ijQ4",
-  authDomain: "netflex-clone-adaab.firebaseapp.com",
-  projectId: "netflex-clone-adaab",
-  storageBucket: "netflex-clone-adaab.firebasestorage.app",
-  messagingSenderId: "258263056725",
-  appId: "1:258263056725:web:9620911113dc47955a6fdc",
-  measurementId: "G-LJSJB27RVC"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
+
+
+
+console.log("API Key Check:", import.meta.env.VITE_FIREBASE_API_KEY);
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
